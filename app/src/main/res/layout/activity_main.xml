@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textAdres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/editAddres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAdres"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textSubj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAddres"
+        android:layout_alignParentStart="true"
+        android:text="Subject" />
+
+    <EditText
+        android:id="@+id/editSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSubj"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textMesg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSubject"
+        android:layout_alignParentStart="true"
+        android:text="Message" />
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMesg"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:gravity="left"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editMessage"
+        android:layout_alignEnd="@+id/editMessage"
+        android:layout_alignBottom="@+id/btnStopRec"
+        android:layout_marginStart="271dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="-189dp"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/btnStartRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editMessage"
+        android:layout_alignStart="@+id/editMessage"
+        android:layout_alignEnd="@+id/editMessage"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="2dp"
+        android:text="Start recording" />
+
+    <Button
+        android:id="@+id/btnStopRec"
+        android:layout_width="149dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/editMessage"
+        android:layout_alignStart="@+id/editMessage"
+        android:layout_alignEnd="@+id/editMessage"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="1dp"
+        android:text="Stop recording" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editMessage"
+        android:layout_alignBottom="@+id/editMessage"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-67dp"
+        android:clickable="true"
+        app:srcCompat="@color/colorAccent" />
+
+
+</RelativeLayout>
