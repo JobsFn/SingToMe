@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText edMessage;
     private Button btnStartRec;
     private Button btnStopRec;
-    private Button btnAddAudio;
+    private FloatingActionButton btnAddAudio;
 
     public MainActivity() {
     }
